@@ -1,6 +1,6 @@
 """This module generates randome products and prints a summary of them."""
 
-from random import random, randint, sample, uniform
+from random import randint, sample, uniform
 from acme import Product
 
 
@@ -38,7 +38,7 @@ def inventory_report(products):
         total_weight += product.weight
         total_flammability += product.flammability
 
-    print("ACME  CORPORATION OFFICIAL INVENTORY REPORT")
+    print("ACME CORPORATION OFFICIAL INVENTORY REPORT")
     print("Unique product names: {}".format(len(names)))
     print("Average price: {}".format(total_price / len(products)))
     print("Average weight: {}".format(total_weight / len(products)))

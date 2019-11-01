@@ -58,4 +58,4 @@ class BoxingGlove(Product):
         elif 15 > self.weight >= 5:
             return "Hey that hurt!"
         else:
-            return "OUCH!!"
+            return "OUCH!"

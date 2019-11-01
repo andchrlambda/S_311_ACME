@@ -25,6 +25,11 @@ class AcmeProductTests(unittest.TestCase):
         prod_explode = Product('Test explosiveness', flammability=2, weight=25)
         self.assertEqual(prod_explode.explode(), "...BABOOM!!")
 
+    def test_default_boxing_weight(self):
+        """Test default boxing gloves are lighter."""
+        glove = BoxingGlove("Test glove")
+        self.assertEqual(glove.weight, 10)
+
 
 class AcmeReportTests(unittest.TestCase):
     """Testing that appropriate names were chosen
